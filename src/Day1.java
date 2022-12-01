@@ -14,7 +14,7 @@ public class Day1 {
         maxHeap.add(current);
         current = 0;
       } else {
-        current += Long.parseLong(line);
+        current += Integer.parseInt(line);
       }
     }
     maxHeap.add(current);
