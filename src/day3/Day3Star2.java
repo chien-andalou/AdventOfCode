@@ -13,7 +13,7 @@ public class Day3Star2 {
       var set = new HashSet<Character>();
       for (int i = 1; (line = reader.readLine()) != null; i++) {
         var currentSet = new HashSet<Character>();
-        for (var letter: line.toCharArray()) {
+        for (var letter : line.toCharArray()) {
           currentSet.add(letter);
         }
         if (i % 3 == 1) {
@@ -22,7 +22,7 @@ public class Day3Star2 {
           set.retainAll(currentSet);
         }
 
-        if (i%3 == 0) {
+        if (i % 3 == 0) {
           var commonLetter = set.iterator().next();
           if (Character.isLowerCase(commonLetter)) {
             result += commonLetter - 'a' + 1;
