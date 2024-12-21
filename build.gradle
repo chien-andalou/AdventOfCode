@@ -1,0 +1,19 @@
+plugins {
+    id 'java' // Or other plugin suitable for your project (e.g., 'application', 'kotlin')
+}
+
+group = 'com.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral() // Add other repositories if needed
+}
+
+dependencies {
+    // Add your dependencies here
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
